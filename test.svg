@@ -1,0 +1,5 @@
+<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg">
+    <line x1="10" y1="{upper_lip_start}" x2="90" y2="{upper_lip_end}" stroke="black" stroke-width="2" />
+    <line x1="10" y1="{lower_lip_start}" x2="90" y2="{lower_lip_end}" stroke="black" stroke-width="2" />
+    <line x1="50" y1="{tongue_start}" x2="50" y2="{tongue_end}" stroke="red" stroke-width="2" />
+</svg>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mouth Shape Animator</title>
+    <style>
+        svg {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        line {
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="startRecognition()">Start Recognition</button>
+    <div id="output"></div>
+    <svg id="mouth">
+        <line id="upperLip" x1="10" y1="20" x2="190" y2="20" stroke="black" stroke-width="4" />
+        <line id="lowerLip" x1="10" y1="80" x2="190" y2="80" stroke="black" stroke-width="4" />
+        <line id="tongue" x1="100" y1="60" x2="100" y2="80" stroke="red" stroke-width="4" />
+    </svg>
+    <script>
+        function startRecognition() {
+            // Simulate receiving data for demonstration
+            setTimeout(() => {
+                animateMouth('AA');
+            }, 1000);
+            setTimeout(() => {
+                animateMouth('AE');
+            }, 3000);
+            setTimeout(() => {
+                animateMouth('B');
+            }, 5000);
+        }
+
+        function animateMouth(phoneme) {
+            const upperLip = document.getElementById('upperLip');
+            const lowerLip = document.getElementById('lowerLip');
+            const tongue = document.getElementById('tongue');
+
+            switch (phoneme) {
+                case 'AA':
+                    // Open mouth, tongue low
+                    upperLip.setAttribute('y1', '20');
+                    upperLip.setAttribute('y2', '20');
+                    lowerLip.setAttribute('y1', '80');
+                    lowerLip.setAttribute('y2', '80');
+                    tongue.setAttribute('y1', '60');
+                    tongue.setAttribute('y2', '80');
+                    break;
+                case 'AE':
+                    // Open mouth, tongue forward low
+                    upperLip.setAttribute('y1', '20');
+                    upperLip.setAttribute('y2', '20');
+                    lowerLip.setAttribute('y1', '90');
+                    lowerLip.setAttribute('y2', '90');
+                    tongue.setAttribute('y1', '70');
+                    tongue.setAttribute('y2', '90');
+                    break;
+                case 'B':
+                    // Closed lips
+                    upperLip.setAttribute('y1', '50');
+                    upperLip.setAttribute('y2', '50');
+                    lowerLip.setAttribute('y1', '50');
+                    lowerLip.setAttribute('y2', '50');
+                    tongue.setAttribute('y1', '50');
+                    tongue.setAttribute('y2', '50');
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
