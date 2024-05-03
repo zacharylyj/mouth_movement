@@ -88,15 +88,15 @@ root = tk.Tk()
 
 # Define paths to your images
 image_paths = {
-    "A": "mouths/group2/lisa-A.png",
-    "B": "mouths/group2/lisa-B.png",
-    "C": "mouths/group2/lisa-C.png",
-    "D": "mouths/group2/lisa-D.png",
-    "E": "mouths/group2/lisa-E.png",
-    "F": "mouths/group2/lisa-F.png",
-    "G": "mouths/group2/lisa-G.png",
-    "H": "mouths/group2/lisa-H.png",
-    "X": "mouths/group2/lisa-X.png",
+    "A": "vermouth/ver-A.png",
+    "B": "vermouth/ver-B.png",
+    "C": "vermouth/ver-C.png",
+    "D": "vermouth/ver-D.png",
+    "E": "vermouth/ver-E.png",
+    "F": "vermouth/ver-F.png",
+    "G": "vermouth/ver-G.png",
+    "H": "vermouth/ver-H.png",
+    "X": "vermouth/ver-X.png",
 }
 
 # Load images and prepare for display after root is initialized
